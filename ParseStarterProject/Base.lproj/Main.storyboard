@@ -18,16 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-U7-cW4">
-                                <rect key="frame" x="259" y="28" width="83" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="HUG-9n-q28"/>
-                                    <constraint firstAttribute="width" constant="83" id="hWd-wV-GOg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-G6-mQd">
                                 <rect key="frame" x="176" y="114" width="249" height="30"/>
                                 <constraints>
@@ -105,8 +95,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ryder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-U7-cW4">
+                                <rect key="frame" x="259" y="28" width="83" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HUG-9n-q28"/>
+                                    <constraint firstAttribute="width" constant="83" id="hWd-wV-GOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18535163001548616" green="1" blue="0.98209348770105109" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eMe-JI-C3u" firstAttribute="top" secondItem="95Z-ws-eTR" secondAttribute="bottom" constant="23" id="08i-NJ-xdm"/>
                             <constraint firstItem="oCb-G6-mQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="09V-2X-8tz"/>
@@ -162,7 +162,7 @@
                                     <constraint firstAttribute="height" constant="44" id="QTa-DF-8hF"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Uber" id="Eit-Zs-v5w">
+                                    <navigationItem title="Ryder" id="Eit-Zs-v5w">
                                         <barButtonItem key="leftBarButtonItem" title="Logout" id="ENP-sP-QKX">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="logoutRider" id="G4j-Ia-041"/>
@@ -190,7 +190,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18431372549019609" green="1" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RRI-ub-s5Z" firstAttribute="top" secondItem="lIA-7h-evQ" secondAttribute="bottom" id="0C1-Vj-Omn"/>
                             <constraint firstItem="RRI-ub-s5Z" firstAttribute="leading" secondItem="VHp-Og-jlZ" secondAttribute="leadingMargin" constant="-20" id="9dV-f6-bBF"/>
@@ -281,7 +281,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="caI-3W-7iY" firstAttribute="centerX" secondItem="qVi-LW-9vA" secondAttribute="centerX" id="424-VV-uBf"/>
                             <constraint firstItem="pBD-j4-hXm" firstAttribute="top" secondItem="MjX-HK-IPy" secondAttribute="bottom" constant="36" id="58i-xE-6im"/>
