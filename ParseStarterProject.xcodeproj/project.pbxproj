@@ -20,7 +20,6 @@
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
-		C81B24BC1B4C3D0900B106CE /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B24BB1B4C3D0900B106CE /* RiderViewController.swift */; };
 		C81B24BE1B4C5DC600B106CE /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B24BD1B4C5DC600B106CE /* DriverViewController.swift */; };
 		C81B24C01B4E6E5A00B106CE /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B24BF1B4E6E5A00B106CE /* RequestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +41,6 @@
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParseStarterProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		C81B24BB1B4C3D0900B106CE /* RiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		C81B24BD1B4C5DC600B106CE /* DriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		C81B24BF1B4E6E5A00B106CE /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
-				C81B24BB1B4C3D0900B106CE /* RiderViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				C81B24BD1B4C5DC600B106CE /* DriverViewController.swift */,
 				C81B24BF1B4E6E5A00B106CE /* RequestViewController.swift */,
@@ -228,7 +225,6 @@
 				C81B24BE1B4C5DC600B106CE /* DriverViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				C81B24C01B4E6E5A00B106CE /* RequestViewController.swift in Sources */,
-				C81B24BC1B4C3D0900B106CE /* RiderViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
