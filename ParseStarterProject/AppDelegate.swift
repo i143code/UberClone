@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         Parse.enableLocalDatastore()
 
-        Parse.setApplicationId("9pceiHiISXcJu1lXawZs5apfXzPwBzwYnSXWpr9o",
-            clientKey: "ajIuMlu8trXSSbwycxTrFQyPRmHNcmjqa8hzLEFp")
+        Parse.setApplicationId("v4JJNZLjMNKTdY2bTiPGaP0W9PBE8h9qLmcjEYrH",
+            clientKey: "DSzAoBH0IBuSh64UeLcwotfKAZRoGQXR79QA3z26")
 
         PFUser.enableAutomaticUser()
 
@@ -81,13 +81,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.setDeviceTokenFromData(deviceToken)
         installation.saveInBackground()
         
-//        PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
-//            if succeeded {
-//                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
-//            } else {
-//                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.", error)
-//            }
-//        }
+        PFPush.subscribeToChannelInBackground("") { (succeeded, error) in
+            if succeeded {
+                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
+            } else {
+                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.", error)
+            }
+        }
     }
 
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {

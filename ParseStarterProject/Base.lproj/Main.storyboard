@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-U7-cW4">
-                                <rect key="frame" x="259" y="28" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-U7-cW4">
+                                <rect key="frame" x="259" y="28" width="83" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HUG-9n-q28"/>
                                     <constraint firstAttribute="width" constant="83" id="hWd-wV-GOg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-G6-mQd">
@@ -59,7 +60,7 @@
                                     <constraint firstAttribute="width" constant="40" id="kSI-kH-enB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4m-Zs-OKo">
@@ -80,7 +81,7 @@
                                     <constraint firstAttribute="height" constant="21" id="Psj-dX-MJW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQl-4z-fIH">
@@ -101,7 +102,7 @@
                                     <constraint firstAttribute="width" constant="46" id="gF1-hn-HPe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -135,11 +136,185 @@
                         <outlet property="switch" destination="eMe-JI-C3u" id="adz-eN-I9o"/>
                         <outlet property="toggleSignupButton" destination="nQl-4z-fIH" id="TtA-gG-fCT"/>
                         <outlet property="username" destination="oCb-G6-mQd" id="8aU-cV-qGX"/>
+                        <segue destination="Ca2-38-MJc" kind="show" identifier="loginRider" id="pDu-fN-o51"/>
+                        <segue destination="h9W-Fv-mFj" kind="show" identifier="loginDriver" id="byJ-6s-pNp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="217"/>
         </scene>
+        <!--Rider View Controller-->
+        <scene sceneID="iPg-9p-q7d">
+            <objects>
+                <viewController title="Rider View Controller" id="Ca2-38-MJc" customClass="RiderViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIA-7h-evQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="MPC-Xb-UNi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VHp-Og-jlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-ub-s5Z">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QTa-DF-8hF"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Uber" id="Eit-Zs-v5w">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ENP-sP-QKX">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="logoutRider" id="G4j-Ia-041"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UIK-NU-raD">
+                                <rect key="frame" x="52" y="87" width="494" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="Ss9-wg-k6C"/>
+                                    <constraint firstAttribute="height" constant="280" id="oRH-Qd-EzQ"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZh-zB-BDp">
+                                <rect key="frame" x="146" y="399" width="309" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="jX8-ue-UYV"/>
+                                    <constraint firstAttribute="height" constant="30" id="yct-Z2-cmN"/>
+                                </constraints>
+                                <state key="normal" title="Call An Uber"/>
+                                <connections>
+                                    <action selector="callUber:" destination="Ca2-38-MJc" eventType="touchUpInside" id="bUd-rd-CKJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RRI-ub-s5Z" firstAttribute="top" secondItem="lIA-7h-evQ" secondAttribute="bottom" id="0C1-Vj-Omn"/>
+                            <constraint firstItem="RRI-ub-s5Z" firstAttribute="leading" secondItem="VHp-Og-jlZ" secondAttribute="leadingMargin" constant="-20" id="9dV-f6-bBF"/>
+                            <constraint firstItem="mZh-zB-BDp" firstAttribute="top" secondItem="UIK-NU-raD" secondAttribute="bottom" constant="32" id="ONM-cL-l4f"/>
+                            <constraint firstItem="mZh-zB-BDp" firstAttribute="centerX" secondItem="VHp-Og-jlZ" secondAttribute="centerX" id="Yvc-aS-XJR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RRI-ub-s5Z" secondAttribute="trailing" constant="-20" id="icU-LM-lRY"/>
+                            <constraint firstItem="UIK-NU-raD" firstAttribute="centerX" secondItem="VHp-Og-jlZ" secondAttribute="centerX" id="lfu-sO-vHa"/>
+                            <constraint firstItem="UIK-NU-raD" firstAttribute="top" secondItem="RRI-ub-s5Z" secondAttribute="bottom" constant="23" id="xGp-Yh-vX1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callUberButton" destination="mZh-zB-BDp" id="s8K-kg-mCH"/>
+                        <outlet property="map" destination="UIK-NU-raD" id="KuO-OS-D7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfX-ER-3ik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="-52"/>
+        </scene>
+        <!--Driver View Controller-->
+        <scene sceneID="O4I-zS-4rJ">
+            <objects>
+                <tableViewController title="Driver View Controller" id="C6B-WC-E83" customClass="DriverViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dHZ-lQ-ATL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dXe-yT-UTs">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXe-yT-UTs" id="2qR-Wc-clc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="M5n-lH-TeD" kind="show" identifier="showViewRequests" id="T7q-z8-NNl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C6B-WC-E83" id="dza-PR-ard"/>
+                            <outlet property="delegate" destination="C6B-WC-E83" id="CNR-N6-Ire"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Requests" id="I8s-V2-VH2">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="25r-B9-hOW">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="logoutDriver" id="k5z-LO-mjn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0u-qB-RG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="649"/>
+        </scene>
+        <!--View Request-->
+        <scene sceneID="Ej2-gm-C9B">
+            <objects>
+                <viewController title="View Request" id="M5n-lH-TeD" customClass="RequestViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MjX-HK-IPy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYt-Ls-ibg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qVi-LW-9vA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-j4-hXm">
+                                <rect key="frame" x="153" y="100" width="295" height="263"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="SpM-Gl-b7t"/>
+                                    <constraint firstAttribute="width" constant="295" id="Wwl-QN-peC"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caI-3W-7iY">
+                                <rect key="frame" x="254" y="394" width="93" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="568-G7-AVo"/>
+                                    <constraint firstAttribute="width" constant="93" id="Ts2-pb-8Ky"/>
+                                </constraints>
+                                <state key="normal" title="Pick Up Rider"/>
+                                <connections>
+                                    <action selector="pickUpRider:" destination="M5n-lH-TeD" eventType="touchUpInside" id="gcm-bV-GBZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="caI-3W-7iY" firstAttribute="centerX" secondItem="qVi-LW-9vA" secondAttribute="centerX" id="424-VV-uBf"/>
+                            <constraint firstItem="pBD-j4-hXm" firstAttribute="top" secondItem="MjX-HK-IPy" secondAttribute="bottom" constant="36" id="58i-xE-6im"/>
+                            <constraint firstItem="caI-3W-7iY" firstAttribute="top" secondItem="pBD-j4-hXm" secondAttribute="bottom" constant="31" id="6YN-o7-QHP"/>
+                            <constraint firstItem="pBD-j4-hXm" firstAttribute="centerX" secondItem="qVi-LW-9vA" secondAttribute="centerX" id="97J-my-VA7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="pBD-j4-hXm" id="3uO-6f-nPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6i-CA-akZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XGV-gO-wwK">
+            <objects>
+                <navigationController id="h9W-Fv-mFj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TtZ-Wp-0Dw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C6B-WC-E83" kind="relationship" relationship="rootViewController" id="jNZ-m7-GX3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebz-Qx-o3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="649"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G4j-Ia-041"/>
+    </inferredMetricsTieBreakers>
 </document>

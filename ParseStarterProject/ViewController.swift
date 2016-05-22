@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 user["isDriver"] = `switch`.on
             
                 user.signUpInBackgroundWithBlock {
-                    (succeded, error) -> Void in
+                    (succeeded, error) -> Void in
                     if let error = error {
                         if let errorString = error.userInfo["error"] as? String {
                     
@@ -56,8 +56,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     
                     
                     } else {
+                        
+                        if self.`switch`.on == true {
+                            
+                            self.performSegueWithIdentifier("loginDriver", sender: self)
+                            
+                        } else {
                     
-                        print("Signup Successful")
+                            self.performSegueWithIdentifier("loginRider", sender: self)
+                            
+                        }
                     
                     }
                     
@@ -68,9 +76,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 PFUser.logInWithUsernameInBackground(username.text!, password:password.text!) {
                     (user: PFUser?, error: NSError?) -> Void in
-                    if user != nil {
+                    if let user = user {
                         
-                        print("Login successful")
+                        if  user["isDriver"]! as! Bool == true {
+                            
+                            self.performSegueWithIdentifier("loginDriver", sender: self)
+                            
+                        } else {
+                            
+                            self.performSegueWithIdentifier("loginRider", sender: self)
+                            
+                        }
                         
                     } else {
                         
@@ -158,5 +174,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if PFUser.currentUser()?.username != nil {
+
+            if  PFUser.currentUser()?["isDriver"]! as! Bool == true {
+                
+                self.performSegueWithIdentifier("loginDriver", sender: self)
+                
+            } else {
+                
+                self.performSegueWithIdentifier("loginRider", sender: self)
+                
+            }
+            
+        }
+        
+    }
+    
+    
 }
 
